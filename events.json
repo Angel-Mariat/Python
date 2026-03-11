@@ -1,0 +1,31 @@
+[
+  {
+    "name": "college fest",
+    "date": "2026-09-11",
+    "id": "1"
+  },
+  {
+    "id": "1773199076958",
+    "name": "Annual Tech Fest",
+    "date": "2026-03-23",
+    "time": "8:30",
+    "description": "",
+    "category": "Fest"
+  },
+  {
+    "id": "1773199169852",
+    "name": "Series Exam-2",
+    "date": "2026-03-13",
+    "time": "09:00",
+    "description": "",
+    "category": "Academic"
+  },
+  {
+    "id": "1773205976882",
+    "name": "Cultural Fest",
+    "date": "2026-04-22",
+    "time": "3:00",
+    "description": "",
+    "category": "Cultural"
+  }
+]

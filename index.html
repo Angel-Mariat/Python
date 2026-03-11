@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="College Event Reminder — Never miss a campus event. View upcoming events with live countdown timers.">
+  <title>College Event Reminder — Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- Navigation -->
+    <nav class="top-nav" id="topNav">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">🎓</div>
+        <div>
+          <h1>EventPulse</h1>
+          <span>College Event Reminder</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active" id="navDashboard">📅 Dashboard</a>
+        <a href="admin.html" class="nav-link" id="navAdmin">⚙️ Admin</a>
+      </div>
+    </nav>
+
+    <!-- Countdown Hero -->
+    <section id="countdownHero" class="glass-card countdown-hero" style="display:none;">
+      <div class="event-label" id="heroLabel">⚡ Next Event</div>
+      <h2 class="event-name" id="heroEventName"></h2>
+      <div class="event-date-display" id="heroEventDate">📅 <span></span></div>
+      <p class="event-description" id="heroEventDesc"></p>
+      <div class="countdown-grid" id="countdownGrid">
+        <div class="countdown-unit">
+          <span class="value" id="cdDays">00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="value" id="cdHours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="value" id="cdMinutes">00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="value" id="cdSeconds">00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Empty state when no events -->
+    <section id="emptyState" class="glass-card empty-state" style="display:none;">
+      <div class="empty-icon">📭</div>
+      <h3>No Upcoming Events</h3>
+      <p>Head over to the <a href="admin.html" style="color: var(--accent-3);">Admin panel</a> to add your first event!</p>
+    </section>
+
+    <!-- Upcoming Events List -->
+    <section id="upcomingSection" style="display:none;">
+      <div class="section-header">
+        <h2>📋 Upcoming Events</h2>
+        <p>All your scheduled campus events</p>
+      </div>
+      <div class="events-grid" id="eventsGrid"></div>
+    </section>
+
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
